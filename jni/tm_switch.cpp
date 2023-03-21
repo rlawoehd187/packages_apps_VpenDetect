@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 extern "C" JNIEXPORT jint JNICALL
-Java_com_monitor_vpen_VPenDetect_setTouchMode(JNIEnv* env __unused, jobject thiz __unused, jint state) {
+Java_org_lineageos_settings_device_VPenDetect_setTouchMode(JNIEnv* env __unused, jobject thiz __unused, jint state) {
 
     int dev = 0;
 

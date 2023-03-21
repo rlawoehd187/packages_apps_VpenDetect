@@ -1,3 +1,4 @@
--keep class com.monitor.vpen.* {
-  *;
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
 }
+

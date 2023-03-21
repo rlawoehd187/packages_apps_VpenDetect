@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.monitor.vpen;
+package org.lineageos.settings.device;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -27,6 +27,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         Log.d(TAG, "Starting");
-        context.startService(new Intent(context, VPenDetect.class));
+        Intent serviceIntent = new Intent(context, VPenDetect.class);
+        context.startService(serviceIntent);
     }
 }
